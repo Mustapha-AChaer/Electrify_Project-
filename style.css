@@ -97,6 +97,29 @@ body{
     }
 }
 
+@media screen and (max-width: 450px) {
+    body{
+        margin: 0;
+    }
+    .navigation{
+        padding: 1.3rem;
+    }
+    .title{
+        font-size: 5rem !important;
+    }
+
+    .title2{
+        font-size: 4rem !important;
+    }
+    .navigation{
+        margin-bottom: 0;
+    }
+
+    .list_item{
+        font-size: 1.2rem;
+    }
+}
+
 /* the hover effect was done by this guy, but I edited it to fit my project 
 refereence: https://www.youtube.com/watch?v=yks0aEfaETs */
 ul li{
@@ -269,6 +292,22 @@ ul li:hover::after{
           font-size: 2rem;
       }
   }
+
+  @media screen and (max-width: 450px) {
+    .aboutUs{
+        overflow: hidden;
+        height: 150rem;
+    }  
+    .aboutUs h1{
+          font-size: 5rem;
+
+      }
+
+      .details{
+          flex-direction: column;
+          text-align: center;
+      }
+}
 /* About Us End */
 
 /* Products start */
@@ -419,6 +458,13 @@ ul li:hover::after{
     }
 }
 
+@media screen and (max-width: 450px) {
+    .products{
+            margin: 0;
+            padding: 2rem;
+    }
+}
+
 /* Products end */
 
 
@@ -447,6 +493,17 @@ ul li:hover::after{
 .contactUs-listItem a{
     text-decoration: none;
     color: whitesmoke;
+}
+
+@media screen and (max-width: 450px) {
+    .contactUs{
+        height: 10rem;
+        margin: 0;
+        padding: 0;
+    }
+    .contactUs ul{
+        font-size: 4rem;
+    }
 }
 /* Contact Us End */
 
