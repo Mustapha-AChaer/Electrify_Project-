@@ -171,6 +171,11 @@ ul li:hover::after{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     margin-bottom: 1rem;
 }
+@media screen and (max-width: 450px) {
+.home{
+    margin-bottom: 0;
+}
+}
 
 .title{
     font-size: 10rem;
@@ -509,7 +514,7 @@ ul li:hover::after{
         padding: 0;
     }
     .contactUs ul{
-        font-size: 4rem;
+        font-size: 2.8rem;
     }
 }
 /* Contact Us End */
