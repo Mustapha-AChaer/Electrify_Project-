@@ -127,9 +127,8 @@ ul li{
 
 }
 ul li:hover{
-    text-shadow: 0px 0px 5px black;
-    
-    cursor: pointer;
+    text-shadow: 0px 0px 5px white;
+   cursor: pointer;
 
 }
 
@@ -179,10 +178,17 @@ ul li:hover::after{
 
 .title{
     font-size: 10rem;
+    position: relative;
+    animation: upDown 1s ease-in-out;
+
+    
 }
 
 .title2{
     font-size: 5rem;
+    position: relative;
+    animation: downUp 1s ease-in-out;
+
 }
 /* Home CSS End */
 
@@ -197,6 +203,7 @@ ul li:hover::after{
 }
 
 .aboutUs h1{
+    transition: all .2s ;
     font-family: 'Bebas Neue', cursive;
     color: var(--Navy);
     font-size: 8rem;
@@ -204,6 +211,8 @@ ul li:hover::after{
     letter-spacing: 1rem;
     margin-bottom: 1rem;
     text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+    animation: upDown 1s ease-in-out;
+    position: relative;
 }
 
 .details{
@@ -224,6 +233,8 @@ ul li:hover::after{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow: hidden;
     text-align: center;
+    position: relative;
+    animation: moveToRight 1s ease-in-out;
 }
 
 .card img{
@@ -327,7 +338,7 @@ ul li:hover::after{
 .products{
     background-color: whitesmoke;
     height: 68rem;
-    margin: 1rem;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -339,6 +350,7 @@ ul li:hover::after{
 
 
 .products h1{
+    transition: all .2s;
     flex: 3;
     font-family: 'Bebas Neue', cursive;
     color: var(--Navy);
@@ -347,6 +359,7 @@ ul li:hover::after{
     letter-spacing: 1rem;
     margin-bottom: 1rem;
     text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+    animation: upDown 3s ease-in;
 }
 
 
@@ -363,6 +376,7 @@ ul li:hover::after{
     height: 20rem;
     width: 40rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: all .4s;
 }
 
 .card1{
@@ -427,6 +441,8 @@ ul li:hover::after{
         opacity: 1;       
 }
 .product-card:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   
     backdrop-filter: blur(3px);
 
 }
@@ -519,4 +535,83 @@ ul li:hover::after{
 }
 /* Contact Us End */
 
+.moveRight{
+    position: relative;
+    
+    animation: moveToRight 3s ease-in-out;
+}
 
+.moveLeft{
+    position: relative;
+    
+    animation: moveToLeft 3s ease-in;
+
+}
+@keyframes upDown {
+    0% {
+        opacity: 0;
+        top: -100px;
+    }
+
+    50%{
+        opacity: 1;
+        top: 20px;
+    }
+
+    100%{
+        top: 0px;
+    }
+    
+}
+
+@keyframes downUp {
+    0% {
+        opacity: 0;
+        top: 100px;
+    }
+
+    50%{
+        opacity: 1;
+        top: -20px;
+    }
+
+    100%{
+        top: 0px;
+    }
+    
+}
+
+@keyframes moveToRight {
+
+    0% {
+        opacity: 0;
+        left: -200px;
+    }
+
+   50%{
+       opacity: 1;
+       left: 20px;
+   }
+    100%{
+       left: 0px;
+    }
+    
+}
+@keyframes moveToLeft {
+
+    0% {
+        opacity: 0;
+        right: -200px;
+    }
+
+   50%{
+       opacity: 1;
+       right: 20px;
+   }
+    100%{
+       right: 0px;
+    }
+    
+}
+    
+    
